@@ -5,7 +5,7 @@ import { User } from "./models/User.js";
 import { Subject } from "./models/Subject.js";
 import { Student } from "./models/Student.js";
 import { Product } from "./models/Product.js";
-import { Book } from "./models/Book.js";
+import { Device } from "./models/Device.js";
 import inquirer from "inquirer";
 
 const rootSequelize = new Sequelize("mysql://root:@localhost:3306/");

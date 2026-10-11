@@ -3,6 +3,26 @@
   <div class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold text-center mt-10">Welcome to XianFire 🔥</h1>
     <p class="text-center mt-4">Home Page</p>
+    <a href="/add">add new</a>
     
   </div>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>Quantity</td>
+      <td>Production</td>
+      <td>Price</td>
+    </tr>
+    {{#each data}}
+    <tr>
+      <td>{{Name}}</td>
+      <td>{{Description}}</td>
+      <td>{{Quantity}}</td>
+      <td>{{Production}}</td>
+      <td>{{Price}}</td>
+      <td><a href="/edit/{{id}}">edit</a>|delete</td>
+    </tr>
+    {{/each}}
+  </table>
 {{> footer }}

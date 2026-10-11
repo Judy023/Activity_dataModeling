@@ -114,9 +114,11 @@ import subject from "./routes/subject.js";
 import student from "./routes/student.js";
 import product from "./routes/product.js";
 import book from "./routes/book.js";
+import device from "./routes/device.js";
 
 app.use("/user", user);
 app.use("/subject", subject);
 app.use("/student", student);
 app.use("/product", product);
 app.use("/book", book);
+app.use("/", device);
