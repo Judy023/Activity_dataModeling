@@ -21,7 +21,8 @@
       <td>{{Quantity}}</td>
       <td>{{Production}}</td>
       <td>{{Price}}</td>
-      <td><a href="/edit/{{id}}">edit</a>|delete</td>
+      <td><a href="/edit/{{id}}">edit</a> | <a href="/delete/{{id}}">delete</a></td>
+      
     </tr>
     {{/each}}
   </table>

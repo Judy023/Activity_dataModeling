@@ -43,7 +43,7 @@ const devicecontroller ={
              Name, Description, Quantity, Production, Price });
             res.json(data)
         },
-        update:async(req, res)=>{
+        update1:async(req, res)=>{
             const{id} = req.params;
             const {Name, Description, Quantity, Production, Price} = req.body;
             const rep = await Device.update({
@@ -51,7 +51,7 @@ const devicecontroller ={
             }, {where: {id}});
             res.json(rep);
         },
-        delete:async(req, res)=>{
+        delete2:async(req, res)=>{
             const{id} = req.params;
             await Device.destroy({where:{id}});
             res.json({"message": "delete"});

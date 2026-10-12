@@ -30,7 +30,7 @@ const devicecontroller ={
     res.render("home", {data});
   },
   edit:async(req, res)=>{
-    const {id} = re.params;
+    const {id} = req.params;
     const data = await Device.findByPk(id);
     res.render("edit", {data});
   },
@@ -58,13 +58,13 @@ const devicecontroller ={
             const rep = await Device.update({
                 Name, Description, Quantity, Production, Price
             }, {where: {id}});
-            res.json(rep);
+            res.redirect("/");
         },
         
         delete:async(req, res)=>{
             const{id} = req.params;
             await Device.destroy({where:{id}});
-            res.json({"message": "delete"});
+            res.redirect("/");
         }};
         
         export { devicecontroller };

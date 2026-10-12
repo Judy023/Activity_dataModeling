@@ -1,5 +1,5 @@
 {{> head }}
-<form action="/insert" method="POSt">
+<form action="/insert" method="Post">
     <label for="Name">Name</label>
     <input type="text" name="Name" placeholder="Name">
     <label for="Description">Description</label>

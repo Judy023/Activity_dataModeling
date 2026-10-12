@@ -4,7 +4,7 @@ const router = express.Router();
 router.get("/devices", devicecontroller.all);
 router.post("/devices", devicecontroller.insert);
 router.get("/devices/:id", devicecontroller.one);
-router.put("/devices/:id", devicecontroller.update);
-router.delete("/devices/:id", devicecontroller.delete);
+router.put("/devices/:id", devicecontroller.update1);
+router.delete("/devices/:id", devicecontroller.delete2);
 
 export default router;

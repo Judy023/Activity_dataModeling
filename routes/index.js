@@ -28,12 +28,14 @@ import express from "express";
 import { homePage } from "../controllers/homeController.js";
 import { devicecontroller } from "../controllers/device2.js";
 const router = express.Router();
-router.get("/", homePage);
+router.get("/h", homePage);
 
 router.get("/", devicecontroller.index);
 router.get("/add", devicecontroller.add);
 router.post("/insert", devicecontroller.insert);
 router.get("/edit/:id", devicecontroller.edit);
+router.get("/delete/:id", devicecontroller.delete);
+router.post("/update/:id", devicecontroller.update);
 
 import { loginPage, registerPage, forgotPasswordPage, dashboardPage, loginUser, registerUser, logoutUser } from "../controllers/authController.js";
 
